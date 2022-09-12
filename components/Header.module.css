@@ -1,0 +1,17 @@
+.mainContainer {
+  display: grid;
+  justify-content: end;
+}
+
+.mainContainer div {
+  background: #fff;
+}
+
+.header ul {
+  display: flex;
+  justify-content: end;
+}
+
+.header ul li {
+  margin-left: 20px;
+}
