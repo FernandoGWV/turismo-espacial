@@ -1,9 +1,15 @@
 import React from "react";
 import Link from "next/link";
 import styles from "./Header.module.css";
+import Image from "next/image";
+import Logo from "../assets/shared/logo.svg";
+
 const Header = () => {
   return (
     <header className={`${styles.mainContainer} container`}>
+      <figure>
+        <Image src={Logo} alt="Logo" />
+      </figure>
       <div>
         <section>
           <nav className={styles.header}>
@@ -12,7 +18,7 @@ const Header = () => {
                 <Link href="/">
                   <a>
                     {" "}
-                    <span>02</span> Home
+                    <span>00</span> Home
                   </a>
                 </Link>
               </li>

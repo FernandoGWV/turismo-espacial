@@ -10,7 +10,6 @@ const Layout = ({ children }: Props) => {
     <div>
       <Header />
       <main>{children}</main>
-      <footer>Todos os direitos reservados.</footer>
     </div>
   );
 };
