@@ -1,0 +1,25 @@
+.destination {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: flex-start;
+  margin: 0 auto;
+}
+
+.destination ul {
+  display: flex;
+  position: relative;
+  left: -440px;
+  top: 100px;
+}
+
+.destination ul li {
+  padding-right: 10px;
+}
+
+.destination ul li button {
+  background: none;
+  border: none;
+  text-transform: uppercase;
+  color: aliceblue;
+  font-size: 1.1rem;
+}

@@ -1,0 +1,32 @@
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 50px;
+}
+
+.container div {
+  display: grid;
+  justify-content: start;
+
+  margin-top: 80px;
+  position: relative;
+  left: 100px;
+}
+
+.container h1 {
+  font-size: 3rem;
+  color: #fefe;
+}
+
+.container p {
+  color: #fff;
+  font-size: 1.1rem;
+}
+
+.container .infor {
+  display: flex;
+}
+
+.description {
+  width: 500px;
+}
