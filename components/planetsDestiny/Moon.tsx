@@ -17,15 +17,14 @@ const Moon = () => {
           there, take in some history by visiting the Luna 2 and Apollo 11
           landing sites.
         </p>
-        <div className={styles.infor}>
-          <p>
-            avg.distance time<span>384,400 km</span>
-          </p>
 
-          <p>
-            est.travel time <span>3 days</span>
-          </p>
-        </div>
+        <p>
+          avg.distance time<span>384,400 km</span>
+        </p>
+
+        <p>
+          est.travel time <span>3 days</span>
+        </p>
       </div>
     </div>
   );

@@ -23,8 +23,8 @@
   font-size: 1.1rem;
 }
 
-.container .infor {
-  display: flex;
+.container span {
+  display: block;
 }
 
 .description {
