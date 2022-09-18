@@ -11,11 +11,6 @@ const Destination = () => {
   const [mars, setMars] = React.useState(false);
   const [europa, setEuropa] = React.useState(false);
   const [titan, setTitan] = React.useState(false);
-  const active = () => {
-    if (moon || mars || europa || titan) {
-      return styles.active;
-    }
-  };
 
   return (
     <section className={`${styles.destination} container`}>
@@ -34,7 +29,7 @@ const Destination = () => {
           </button>
         </li>
 
-        <li>
+        <li className={mars ? styles.btnActive : ""}>
           <button
             id="mars"
             onClick={() => {
@@ -48,7 +43,7 @@ const Destination = () => {
           </button>
         </li>
 
-        <li>
+        <li className={europa ? styles.btnActive : ""}>
           <button
             id="europa"
             onClick={() => {
@@ -62,7 +57,7 @@ const Destination = () => {
           </button>
         </li>
 
-        <li>
+        <li className={titan ? styles.btnActive : ""}>
           <button
             id="titan"
             onClick={() => {

@@ -9,7 +9,7 @@ const Europa = () => {
       <figure>
         <Image src={EuroppaPng} alt="mars" />
       </figure>
-      <div>
+      <div className={styles.mainContainer}>
         <h1>Europa</h1>
         <p className={styles.description}>
           The smallest of the four Galilean moons orbiting Jupiter, Europa is a
@@ -17,14 +17,15 @@ const Europa = () => {
           ice skating, curling, hockey, or simple relaxation in your snug
           wintery cabin.
         </p>
+        <div className={styles.infor}>
+          <p>
+            avg.distance time<span>628 mil. km</span>
+          </p>
 
-        <p>
-          avg.distance time<span>628 mil. km</span>
-        </p>
-
-        <p>
-          est.travel time <span>3 years</span>
-        </p>
+          <p>
+            est.travel time <span>3 years</span>
+          </p>
+        </div>
       </div>
     </div>
   );
