@@ -1,7 +1,7 @@
 import type { NextPage } from "next";
 import styles from "../styles/Home.module.css";
 import HomeBg from "../assets/home/background-home-desktop.jpg";
-import React, { useEffect } from "react";
+import React from "react";
 
 const Home: NextPage = () => {
   return (
