@@ -12,6 +12,12 @@ const Destination = () => {
   const [europa, setEuropa] = React.useState(false);
   const [titan, setTitan] = React.useState(false);
 
+  React.useEffect(() => {
+    document.documentElement.style.background = `url(${DestinyBg.src})`;
+    document.documentElement.style.backgroundRepeat = "no-repeat";
+    document.documentElement.style.backgroundSize = `cover`;
+  }, []);
+
   return (
     <section className={`${styles.destination} container`}>
       <ul>
@@ -95,15 +101,13 @@ const Destination = () => {
         </div>
       ) : null}
 
-      {
-        <style global jsx>{`
+      {/*  <style global jsx>{`
           body {
             background-image: url(${DestinyBg.src});
             background-repeat: no-repeat;
             background-size: cover;
           }
-        `}</style>
-      }
+        `}</style> */}
     </section>
   );
 };

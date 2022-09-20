@@ -1,9 +1,18 @@
 import type { NextPage } from "next";
 import styles from "../styles/Home.module.css";
 import HomeBg from "../assets/home/background-home-desktop.jpg";
-import React from "react";
+import React, { useState } from "react";
 
 const Home: NextPage = () => {
+  const [loading, setLoading] = useState(false);
+  React.useEffect(() => {
+    setLoading(true);
+    document.documentElement.style.background = `url(${HomeBg.src})`;
+    document.documentElement.style.backgroundRepeat = "no-repeat";
+    document.documentElement.style.backgroundSize = `cover`;
+    setLoading(false);
+  }, []);
+  if (loading) return <div>Carregando</div>;
   return (
     <section className={`${styles.home} container`}>
       <div className={styles.mainContainer}>
@@ -23,7 +32,7 @@ const Home: NextPage = () => {
         </div>
       </div>
 
-      <style global jsx>
+      {/*   <style global jsx>
         {`
           body {
             background-image: url(${HomeBg.src});
@@ -31,7 +40,7 @@ const Home: NextPage = () => {
             background-size: cover;
           }
         `}
-      </style>
+      </style> */}
     </section>
   );
 };
